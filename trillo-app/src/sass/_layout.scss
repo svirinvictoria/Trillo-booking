@@ -6,7 +6,7 @@
 
   min-height: 50rem;
   //first adjustment- removing the rose background
-  @media only screen and(max-width: $bp-largest) {
+  @media only screen and (max-width: $bp-largest) {
     margin: 0;
     max-width: 100%;
     width: 100%;
@@ -22,7 +22,7 @@
   align-items: center;
 
   //adjustment #8 - moving the search bar down
-  @media only screen and(max-width: $bp-smallest) {
+  @media only screen and (max-width: $bp-smallest) {
     flex-wrap: wrap;
     height: 11rem;
     align-content: space-around;
@@ -31,7 +31,7 @@
 .content {
   display: flex;
   // adjustment #3- removing the menu column and placing it above the main container
-  @media only screen and(max-width: $bp-medium) {
+  @media only screen and (max-width: $bp-medium) {
     flex-direction: column;
   }
 }
@@ -43,7 +43,7 @@
   flex-direction: column;
   justify-content: space-between;
 
-  @media only screen and(max-width: $bp-medium) {
+  @media only screen and (max-width: $bp-medium) {
     // flex-direction: row;
   }
 }
@@ -58,12 +58,12 @@
   font-size: 1.4rem;
 
   //adjustment #4 - reducing padding
-  @media only screen and(max-width: $bp-medium) {
+  @media only screen and (max-width: $bp-medium) {
     padding: 3rem;
   }
 
   //adjustment #5 - making both flex items occupy 100% of the width - changing the flex direction
-  @media only screen and(max-width: $bp-small) {
+  @media only screen and (max-width: $bp-small) {
     flex-direction: column;
   }
 }
@@ -75,12 +75,12 @@
   padding: 3rem;
 
   //adjustment #4 - reducing padding
-  @media only screen and(max-width: $bp-medium) {
+  @media only screen and (max-width: $bp-medium) {
     padding: 1.5rem;
     margin-right: 3rem;
   }
   //adjustment #5 - making both flex items occupy 100% of the width - changing the flex direction
-  @media only screen and(max-width: $bp-small) {
+  @media only screen and (max-width: $bp-small) {
     margin-right: 0;
     margin-bottom: 3rem;
   }

@@ -1,8 +1,7 @@
 import logo from "../img/logo.png";
 import myPhoto from "../img/my-photo.png";
-import magnifyingGlass from "../img/sprite.svg#icon-magnifying-glass";
-import bookmark from "img/sprite.svg#icon-bookmark";
-import chat from "img/sprite.svg#icon-chat";
+import sprite from "../img/sprite.svg";
+import "../css/style.css";
 
 function Header() {
   return (
@@ -17,7 +16,7 @@ function Header() {
         <button className="search__button">
           {/* <!-- this is how we include SVG icons in HTML using sprite file --> */}
           <svg className="search__icon">
-            <use xlink:href={magnifyingGlass}></use>
+            <use xlinkHref = {`${sprite}#icon-magnifying-glass`}></use>
           </svg>
         </button>
       </form>
@@ -25,13 +24,13 @@ function Header() {
       <nav className="user-nav">
         <div className="user-nav__icon-box">
           <svg className="user-nav__icon">
-            <use xlinkHref={bookmark}></use>
+             <use xlinkHref={`${sprite}#icon-bookmark`}></use> 
           </svg>
           <span className="user-nav__notification">7</span>
         </div>
         <div className="user-nav__icon-box">
           <svg className="user-nav__icon">
-            <use xlinkHref={chat}></use>
+             <use xlinkHref={`${sprite}#icon-chat`}></use> 
           </svg>
           <span className="user-nav__notification">13</span>
         </div>

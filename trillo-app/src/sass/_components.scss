@@ -13,11 +13,12 @@
   align-items: center;
   justify-content: center;
   //adjustment #8 - moving the search bar down
-  @media only screen and(max-width: $bp-smallest) {
+  @media only screen and (max-width: $bp-smallest) {
     order: 1;
     flex: 0 0 100%;
     background-color: var(--color-grey-light-2);
   }
+  
 
   &__input {
     font-family: inherit;
@@ -126,7 +127,7 @@
   margin-top: 3.5rem;
 
   // adjustment #3- removing the menu column and placing it above the main container
-  @media only screen and(max-width: $bp-medium) {
+  @media only screen and (max-width: $bp-medium) {
     display: flex;
     margin: 0;
     font-size: 1.1rem;
@@ -135,13 +136,13 @@
     position: relative;
     &:not(:last-child) {
       margin-bottom: 0.5rem;
-      @media only screen and(max-width: $bp-medium) {
+      @media only screen and (max-width: $bp-medium) {
         margin: 0;
       }
     }
 
     // adjustment #3- removing the menu column and placing it above the main container. each menu item should occupy 25% of the menu
-    @media only screen and(max-width: $bp-medium) {
+    @media only screen and (max-width: $bp-medium) {
       flex: 1;
     }
   }
@@ -185,13 +186,13 @@
     display: flex;
     align-items: center;
 
-    @media only screen and(max-width: $bp-medium) {
+    @media only screen and (max-width: $bp-medium) {
       justify-content: center;
       padding: 2rem;
     }
 
     //adjustment #6 - upper navigation bar
-    @media only screen and(max-width: $bp-small) {
+    @media only screen and (max-width: $bp-small) {
       flex-direction: column;
       padding: 1.5rem;
     }
@@ -203,7 +204,7 @@
     margin-right: 2rem;
     fill: currentColor; //this means use a color of the parent element
     //adjustment #6 - upper navigation bar
-    @media only screen and(max-width: $bp-small) {
+    @media only screen and (max-width: $bp-small) {
       margin-right: 0;
       margin-bottom: 0.6rem;
       padding: 0;
@@ -222,7 +223,7 @@
   padding: 2.5rem;
 
   // adjustment #3- removing the menu column and placing it above the main container. removing the legal text
-  @media only screen and(max-width: $bp-medium) {
+  @media only screen and (max-width: $bp-medium) {
     display: none;
   }
 }
@@ -252,7 +253,7 @@
     padding: 1.5rem 3rem;
 
     //adjustment #7 - hotel overview heading
-    @media only screen and(max-width: $bp-small) {
+    @media only screen and (max-width: $bp-small) {
       font-size: 1.75rem;
       padding: 1rem 2rem;
     }
@@ -293,7 +294,7 @@
     justify-content: center;
 
     //adjustment #7 - hotel overview heading
-    @media only screen and(max-width: $bp-small) {
+    @media only screen and (max-width: $bp-small) {
       padding: 0 1.5rem;
     }
   }
@@ -304,7 +305,7 @@
     margin-bottom: -3px;
 
     //adjustment #7 - hotel overview heading
-    @media only screen and(max-width: $bp-small) {
+    @media only screen and (max-width: $bp-small) {
       font-size: 1.75rem;
     }
   }
@@ -313,7 +314,7 @@
     font-size: 0.8rem;
     text-transform: uppercase;
     //adjustment #7 - hotel overview heading
-    @media only screen and(max-width: $bp-small) {
+    @media only screen and (max-width: $bp-small) {
       font-size: 0.5rem;
     }
   }
@@ -452,7 +453,7 @@
   overflow: hidden;
 
   //adjustment #4 - reducing padding
-  @media only screen and(max-width: $bp-medium) {
+  @media only screen and (max-width: $bp-medium) {
     padding: 1.5rem;
     margin-bottom: 2.5rem;
   }
@@ -517,7 +518,7 @@
   text-align: center;
 
   //adjustment #4 - reducing padding
-  @media only screen and(max-width: $bp-medium) {
+  @media only screen and (max-width: $bp-medium) {
     padding: 2rem 0;
   }
 
