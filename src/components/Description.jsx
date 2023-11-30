@@ -4,6 +4,25 @@ import user5 from "../img/user-5.jpg";
 import user6 from "../img/user-6.jpg";
 
 function Description() {
+  const benefits = [
+    "Close to the beach",
+    "Breakfast included",
+    "Free airport shuttle",
+    "Free wifi in all rooms",
+    "Air conditioning and heating",
+    "Pets allowed",
+    "We speak all languges",
+    "Perfect for families",
+  ];
+
+  const benefitsAsReactElements = benefits.map((item, index) => {
+    return (
+      <ul className="list" key={index}>
+        <li className="list__item">{item}</li>
+      </ul>
+    );
+  });
+
   return (
     <div className="description">
       <p className="paragraph">
@@ -15,16 +34,8 @@ function Description() {
         Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto
         voluptate delectus, inventore iure aliquid aliquam.
       </p>
-      <ul className="list">
-        <li className="list__item">Close to the beach</li>
-        <li className="list__item">Breakfast included</li>
-        <li className="list__item">Free airport shuttle</li>
-        <li className="list__item">Free wifi in all rooms</li>
-        <li className="list__item">Air conditioning and heating</li>
-        <li className="list__item">Pets allowed</li>
-        <li className="list__item">We speak all languges</li>
-        <li className="list__item">Perfect for families</li>
-      </ul>
+      <div className="list__section">{benefitsAsReactElements}</div>
+
       <div className="recommend">
         <p className="recommend__count">
           Lucy and the other friends recommend this hotel

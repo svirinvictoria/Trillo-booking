@@ -308,15 +308,17 @@ body {
   margin-bottom: 2rem; }
 
 .list {
-  margin: 3rem 0;
-  padding: 3rem 0;
   list-style: none;
-  border-bottom: var(--line);
-  border-top: var(--line);
   display: flex;
-  flex-wrap: wrap; }
+  flex: 0 0 50%; }
+  .list__section {
+    border-bottom: var(--line);
+    border-top: var(--line);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3rem 0;
+    padding: 3rem 0; }
   .list__item {
-    flex: 0 0 50%;
     margin-bottom: 0.7rem;
     display: flex;
     align-items: center; }

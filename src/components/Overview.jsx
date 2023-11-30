@@ -1,25 +1,22 @@
 import sprite from "../img/sprite.svg";
 
 function Overview() {
+  const getRaiting = () => {
+    const stars = [];
+    for (let i = 0; i < 5; i++) {
+      stars.push(
+        <svg className="overview__icon-star">
+          <use xlinkHref={`${sprite}#icon-star`}></use>
+        </svg>
+      );
+    }
+    return stars;
+  };
   return (
     <div className="overview">
       <h1 className="overview__heading">Hotel Las Palmas</h1>
       <div className="overview__stars">
-        <svg className="overview__icon-star">
-          <use xlinkHref={`${sprite}#icon-star`}></use>
-        </svg>
-        <svg className="overview__icon-star">
-          <use xlinkHref={`${sprite}#icon-star`}></use>
-        </svg>
-        <svg className="overview__icon-star">
-          <use xlinkHref={`${sprite}#icon-star`}></use>
-        </svg>
-        <svg className="overview__icon-star">
-          <use xlinkHref={`${sprite}#icon-star`}></use>
-        </svg>
-        <svg className="overview__icon-star">
-          <use xlinkHref={`${sprite}#icon-star`}></use>
-        </svg>
+        {getRaiting()}
       </div>
 
       <div className="overview__location">

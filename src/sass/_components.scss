@@ -18,7 +18,6 @@
     flex: 0 0 100%;
     background-color: var(--color-grey-light-2);
   }
-  
 
   &__input {
     font-family: inherit;
@@ -376,17 +375,20 @@
 /// ///////////////////////////////////////////////////////////////////////
 /// LIST
 .list {
-  margin: 3rem 0;
-  padding: 3rem 0;
   list-style: none;
-  border-bottom: var(--line);
-  border-top: var(--line);
-
   display: flex;
-  flex-wrap: wrap;
+  flex: 0 0 50%; //don't grow, don't shrink and the width is 50%
+
+  &__section {
+    border-bottom: var(--line);
+    border-top: var(--line);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3rem 0;
+    padding: 3rem 0;
+  }
 
   &__item {
-    flex: 0 0 50%; //don't grow, don't shrink and the width is 50%
     margin-bottom: 0.7rem;
     display: flex;
     align-items: center;
